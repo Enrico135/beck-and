@@ -1,0 +1,172 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cadastro,
+.cadastros {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #2563eb;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   LISTA DE CADASTROS
+========================= */
+
+#listaCadastros {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vazio {
+    color: #888;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.card-cadastro {
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: #f8fafc;
+}
+
+.card-cadastro h3 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.card-cadastro p {
+    margin: 4px 0;
+    color: #555;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 25px auto;
+    }
+
+    .cadastro,
+    .cadastros {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
